@@ -2,6 +2,7 @@ class MiddlemanGravatar < Middleman::Extension
   def initialize(app, options_hash={}, &block)
     super
   end
+
   helpers do
     def gravatar_for(email)
       if email
